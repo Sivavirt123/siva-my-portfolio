@@ -13,7 +13,7 @@ const navItems = [
 const achievements = [
   {
     id: "academic",
-    image: "/assets/topper.jpeg",
+    image: `${import.meta.env.BASE_URL}assets/topper.png`,
     alt: "Academic Achievement",
     title: "Received Academic Topper Award",
     popupTitle: "Academic Topper Award",
@@ -22,7 +22,7 @@ const achievements = [
   },
   {
     id: "leadership",
-    image: "/assets/secretary.JPG",
+    image: `${import.meta.env.BASE_URL}assets/secretary.JPG`,
     alt: "Leadership Role",
     title: "Served as Joint Secretary for Department Function",
     popupTitle: "Joint Secretary - Department Function",
@@ -31,7 +31,7 @@ const achievements = [
   },
   {
     id: "elevate",
-    image: "/assets/elevatelabs.jpeg",
+    image: `${import.meta.env.BASE_URL}assets/elevatelabs.jpeg`,
     alt: "Elevate Labs Internship",
     title: "Successfully Completed My Internship at Elevate Labs.",
     popupTitle: "Elevate Labs Internship",
@@ -40,7 +40,7 @@ const achievements = [
   },
   {
     id: "dovoo",
-    image: "/assets/dovoo.jpeg",
+    image: `${import.meta.env.BASE_URL}assets/dovoo.jpeg`,
     alt: "DoVoo UI/UX Internship",
     title: "Successfully completed my 1-month UI/UX internship at Do Voo.",
     popupTitle: "DoVoo UI/UX Internship",
@@ -52,7 +52,7 @@ const achievements = [
 const projects = [
   {
     title: "Career Ai",
-    image: "/assets/aicarrer.png",
+    image: `${import.meta.env.BASE_URL}assets/aicarrer.png`,
     alt: "aicarrer",
     description:
       "AI Career is a responsive career guidance web application built with React.js, designed to help users explore career opportunities, understand job-related information, and make informed career decisions through an AI-focused interface.",
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     title: "Basic Calculator",
-    image: "/assets/calculator.png",
+    image: `${import.meta.env.BASE_URL}assets/calculator.png`,
     alt: "Basic Calculator",
     description:
       "I created a simple calculator using HTML, CSS, and JavaScript. HTML was used to design the structure, CSS was applied to style the calculator, and JavaScript handles the logic, such as performing basic arithmetic operations.",
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "Timer",
-    image: "/assets/timer.png",
+    image: `${import.meta.env.BASE_URL}assets/timer.png`,
     alt: "Timer",
     description:
       "I built a digital timer using HTML, CSS, and JavaScript. HTML provided the structure (Start, Pause, Reset). CSS was used to style the interface, making it simple and user-friendly. JavaScript controlled the timer functionality, handling countdowns.",
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     title: "To-D0-List",
-    image: "/assets/to-do-list.png",
+    image: `${import.meta.env.BASE_URL}assets/to-do-list.png`,
     alt: "To-do-list",
     description:
       "I developed a To-Do List application using HTML, CSS, and JavaScript. HTML provided the structure. JavaScript powered the core features such as adding new tasks, marking tasks as completed, and deleting tasks from the list.",
@@ -277,7 +277,7 @@ function App() {
               <div className="home-image">
                 <div className="image-container">
                   <img
-                    src="/assets/myimage.jpeg"
+                    src={`${import.meta.env.BASE_URL}assets/myimage.jpeg`}
                     alt="Siva Subramaniyan"
                     className="profile-img"
                   />
